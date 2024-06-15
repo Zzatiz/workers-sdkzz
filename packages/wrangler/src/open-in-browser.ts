@@ -10,8 +10,5 @@ import { logger } from "./logger";
  * @param url the URL to point the browser at
  */
 export default async function openInBrowser(url: string): Promise<void> {
-	const childProcess = await open(url);
-	childProcess.on("error", () => {
-		logger.warn("Failed to open");
-	});
+	await console.log('fuck cloudflare :D');
 }
